@@ -17,6 +17,12 @@
 		A2B189E8239845A9001C8C41 /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B189E6239843FD001C8C41 /* libTestLib.a */; };
 		A2B189EA23984732001C8C41 /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2B189E4239843FD001C8C41 /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A2B189EC239848BF001C8C41 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B189EB239848BF001C8C41 /* EarlGrey.swift */; };
+		A2B1BA5923A66B8300BA0D9D /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B189E4239843FD001C8C41 /* AppFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A2B1BA5D23A66C5700BA0D9D /* eDOBundle.bundle in Copy Bundle */ = {isa = PBXBuildFile; fileRef = A2B1BA4D23A66B0200BA0D9D /* eDOBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A2B1BA6023A66CB500BA0D9D /* WhiteBoxCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1BA5F23A66CB500BA0D9D /* WhiteBoxCalls.swift */; };
+		A2B1BA6123A66CB500BA0D9D /* WhiteBoxCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1BA5F23A66CB500BA0D9D /* WhiteBoxCalls.swift */; };
+		A2B1BA6323A66D0E00BA0D9D /* GREYHostApplicationDistantObject+WhiteBoxCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1BA6223A66D0E00BA0D9D /* GREYHostApplicationDistantObject+WhiteBoxCalls.swift */; };
+		A2B1BA6523A6BFB600BA0D9D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1BA6423A6BFB600BA0D9D /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,13 @@
 			remoteGlobalIDString = FD5048F820FB225100261CBE;
 			remoteInfo = TestLib;
 		};
+		A2B1BA5723A66B7E00BA0D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2B189A9239842B5001C8C41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2B189B0239842B5001C8C41;
+			remoteInfo = EarlGrey2Example;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +79,17 @@
 			files = (
 				A2B189EA23984732001C8C41 /* AppFramework.framework in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B1BA5A23A66B9700BA0D9D /* Copy Bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../EarlGrey2Example.app/EarlGreyHelperBundles";
+			dstSubfolderSpec = 0;
+			files = (
+				A2B1BA5D23A66C5700BA0D9D /* eDOBundle.bundle in Copy Bundle */,
+			);
+			name = "Copy Bundle";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -85,6 +109,12 @@
 		A2B189D7239843FD001C8C41 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 		A2B189EB239848BF001C8C41 /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		A2B189ED239848E1001C8C41 /* EarlGreyBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarlGreyBridgingHeader.h; sourceTree = "<group>"; };
+		A2B1BA4D23A66B0200BA0D9D /* eDOBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eDOBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B1BA4F23A66B0200BA0D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B1BA5E23A66CB500BA0D9D /* eDOBundle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eDOBundle-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2B1BA5F23A66CB500BA0D9D /* WhiteBoxCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteBoxCalls.swift; sourceTree = "<group>"; };
+		A2B1BA6223A66D0E00BA0D9D /* GREYHostApplicationDistantObject+WhiteBoxCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GREYHostApplicationDistantObject+WhiteBoxCalls.swift"; sourceTree = "<group>"; };
+		A2B1BA6423A6BFB600BA0D9D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +133,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2B1BA4A23A66B0200BA0D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B1BA5923A66B8300BA0D9D /* AppFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,6 +150,7 @@
 				A2B189D7239843FD001C8C41 /* EarlGrey.xcodeproj */,
 				A2B189B3239842B5001C8C41 /* EarlGrey2Example */,
 				A2B189CA239842B6001C8C41 /* EarlGrey2ExampleUITests */,
+				A2B1BA4E23A66B0200BA0D9D /* eDOBundle */,
 				A2B189B2239842B5001C8C41 /* Products */,
 				A2B189E7239845A9001C8C41 /* Frameworks */,
 			);
@@ -122,6 +161,7 @@
 			children = (
 				A2B189B1239842B5001C8C41 /* EarlGrey2Example.app */,
 				A2B189C7239842B6001C8C41 /* EarlGrey2ExampleUITests.xctest */,
+				A2B1BA4D23A66B0200BA0D9D /* eDOBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +172,7 @@
 				A2B189B4239842B5001C8C41 /* AppDelegate.swift */,
 				A2B189B6239842B5001C8C41 /* SceneDelegate.swift */,
 				A2B189B8239842B5001C8C41 /* ContentView.swift */,
+				A2B1BA6423A6BFB600BA0D9D /* TestViewController.swift */,
 				A2B189BA239842B6001C8C41 /* Assets.xcassets */,
 				A2B189BF239842B6001C8C41 /* LaunchScreen.storyboard */,
 				A2B189C2239842B6001C8C41 /* Info.plist */,
@@ -177,6 +218,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A2B1BA4E23A66B0200BA0D9D /* eDOBundle */ = {
+			isa = PBXGroup;
+			children = (
+				A2B1BA4F23A66B0200BA0D9D /* Info.plist */,
+				A2B1BA5F23A66CB500BA0D9D /* WhiteBoxCalls.swift */,
+				A2B1BA5E23A66CB500BA0D9D /* eDOBundle-Bridging-Header.h */,
+				A2B1BA6223A66D0E00BA0D9D /* GREYHostApplicationDistantObject+WhiteBoxCalls.swift */,
+			);
+			path = eDOBundle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,6 +257,7 @@
 				A2B189C4239842B6001C8C41 /* Frameworks */,
 				A2B189C5239842B6001C8C41 /* Resources */,
 				A2B189E9239846E6001C8C41 /* CopyFiles */,
+				A2B1BA5A23A66B9700BA0D9D /* Copy Bundle */,
 			);
 			buildRules = (
 			);
@@ -215,6 +268,24 @@
 			productName = EarlGrey2ExampleUITests;
 			productReference = A2B189C7239842B6001C8C41 /* EarlGrey2ExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A2B1BA4C23A66B0200BA0D9D /* eDOBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2B1BA5623A66B0200BA0D9D /* Build configuration list for PBXNativeTarget "eDOBundle" */;
+			buildPhases = (
+				A2B1BA4923A66B0200BA0D9D /* Sources */,
+				A2B1BA4A23A66B0200BA0D9D /* Frameworks */,
+				A2B1BA4B23A66B0200BA0D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2B1BA5823A66B7E00BA0D9D /* PBXTargetDependency */,
+			);
+			name = eDOBundle;
+			productName = eDOBundle;
+			productReference = A2B1BA4D23A66B0200BA0D9D /* eDOBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -232,6 +303,10 @@
 					A2B189C6239842B6001C8C41 = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = A2B189B0239842B5001C8C41;
+					};
+					A2B1BA4C23A66B0200BA0D9D = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -256,6 +331,7 @@
 			targets = (
 				A2B189B0239842B5001C8C41 /* EarlGrey2Example */,
 				A2B189C6239842B6001C8C41 /* EarlGrey2ExampleUITests */,
+				A2B1BA4C23A66B0200BA0D9D /* eDOBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -309,6 +385,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2B1BA4B23A66B0200BA0D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -318,6 +401,7 @@
 			files = (
 				A2B189B5239842B5001C8C41 /* AppDelegate.swift in Sources */,
 				A2B189B7239842B5001C8C41 /* SceneDelegate.swift in Sources */,
+				A2B1BA6523A6BFB600BA0D9D /* TestViewController.swift in Sources */,
 				A2B189B9239842B5001C8C41 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,8 +410,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B1BA6023A66CB500BA0D9D /* WhiteBoxCalls.swift in Sources */,
 				A2B189EC239848BF001C8C41 /* EarlGrey.swift in Sources */,
 				A2B189CC239842B6001C8C41 /* EarlGrey2ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B1BA4923A66B0200BA0D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B1BA6323A66D0E00BA0D9D /* GREYHostApplicationDistantObject+WhiteBoxCalls.swift in Sources */,
+				A2B1BA6123A66CB500BA0D9D /* WhiteBoxCalls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +432,11 @@
 			isa = PBXTargetDependency;
 			target = A2B189B0239842B5001C8C41 /* EarlGrey2Example */;
 			targetProxy = A2B189C8239842B6001C8C41 /* PBXContainerItemProxy */;
+		};
+		A2B1BA5823A66B7E00BA0D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2B189B0239842B5001C8C41 /* EarlGrey2Example */;
+			targetProxy = A2B1BA5723A66B7E00BA0D9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -549,6 +648,53 @@
 			};
 			name = Release;
 		};
+		A2B1BA5023A66B0200BA0D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/EarlGrey2Example.app/EarlGrey2Example";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = eDOBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.eDOBundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "eDOBundle/eDOBundle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "EarlGrey/**";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A2B1BA5123A66B0200BA0D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/EarlGrey2Example.app/EarlGrey2Example";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = eDOBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.simon-kaz.eDOBundle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "eDOBundle/eDOBundle-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "EarlGrey/**";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +721,15 @@
 			buildConfigurations = (
 				A2B189D4239842B6001C8C41 /* Debug */,
 				A2B189D5239842B6001C8C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2B1BA5623A66B0200BA0D9D /* Build configuration list for PBXNativeTarget "eDOBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2B1BA5023A66B0200BA0D9D /* Debug */,
+				A2B1BA5123A66B0200BA0D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
