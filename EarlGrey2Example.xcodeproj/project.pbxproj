@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2918BD823B0E6C300595791 /* AppFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B189E4239843FD001C8C41 /* AppFramework.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A2918BDC23B0E78200595791 /* EG2Bundle.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2918BD023B0E4BD00595791 /* EG2Bundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A2B189B5239842B5001C8C41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B189B4239842B5001C8C41 /* AppDelegate.swift */; };
 		A2B189B7239842B5001C8C41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B189B6239842B5001C8C41 /* SceneDelegate.swift */; };
 		A2B189B9239842B5001C8C41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B189B8239842B5001C8C41 /* ContentView.swift */; };
@@ -20,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A2918BD623B0E68C00595791 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2B189A9239842B5001C8C41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2B189B0239842B5001C8C41;
+			remoteInfo = EarlGrey2Example;
+		};
 		A2B189C8239842B6001C8C41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2B189A9239842B5001C8C41 /* Project object */;
@@ -58,6 +67,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A2918BDB23B0E76A00595791 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../EarlGrey2Example.app/EarlGreyHelperBundles";
+			dstSubfolderSpec = 0;
+			files = (
+				A2918BDC23B0E78200595791 /* EG2Bundle.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2B189E9239846E6001C8C41 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +90,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A2918BD023B0E4BD00595791 /* EG2Bundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EG2Bundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2918BD223B0E4BD00595791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2B189B1239842B5001C8C41 /* EarlGrey2Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarlGrey2Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B189B4239842B5001C8C41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2B189B6239842B5001C8C41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +109,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A2918BCD23B0E4BD00595791 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2918BD823B0E6C300595791 /* AppFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2B189AE239842B5001C8C41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,12 +135,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2918BD123B0E4BD00595791 /* EG2Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				A2918BD223B0E4BD00595791 /* Info.plist */,
+			);
+			path = EG2Bundle;
+			sourceTree = "<group>";
+		};
 		A2B189A8239842B5001C8C41 = {
 			isa = PBXGroup;
 			children = (
 				A2B189D7239843FD001C8C41 /* EarlGrey.xcodeproj */,
 				A2B189B3239842B5001C8C41 /* EarlGrey2Example */,
 				A2B189CA239842B6001C8C41 /* EarlGrey2ExampleUITests */,
+				A2918BD123B0E4BD00595791 /* EG2Bundle */,
 				A2B189B2239842B5001C8C41 /* Products */,
 				A2B189E7239845A9001C8C41 /* Frameworks */,
 			);
@@ -122,6 +160,7 @@
 			children = (
 				A2B189B1239842B5001C8C41 /* EarlGrey2Example.app */,
 				A2B189C7239842B6001C8C41 /* EarlGrey2ExampleUITests.xctest */,
+				A2918BD023B0E4BD00595791 /* EG2Bundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +219,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A2918BCF23B0E4BD00595791 /* EG2Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2918BD323B0E4BD00595791 /* Build configuration list for PBXNativeTarget "EG2Bundle" */;
+			buildPhases = (
+				A2918BCC23B0E4BD00595791 /* Sources */,
+				A2918BCD23B0E4BD00595791 /* Frameworks */,
+				A2918BCE23B0E4BD00595791 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2918BD723B0E68C00595791 /* PBXTargetDependency */,
+			);
+			name = EG2Bundle;
+			productName = EG2Bundle;
+			productReference = A2918BD023B0E4BD00595791 /* EG2Bundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		A2B189B0239842B5001C8C41 /* EarlGrey2Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2B189D0239842B6001C8C41 /* Build configuration list for PBXNativeTarget "EarlGrey2Example" */;
@@ -205,6 +262,7 @@
 				A2B189C4239842B6001C8C41 /* Frameworks */,
 				A2B189C5239842B6001C8C41 /* Resources */,
 				A2B189E9239846E6001C8C41 /* CopyFiles */,
+				A2918BDB23B0E76A00595791 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -226,6 +284,9 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Szymon Kazmierczak";
 				TargetAttributes = {
+					A2918BCF23B0E4BD00595791 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 					A2B189B0239842B5001C8C41 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -256,6 +317,7 @@
 			targets = (
 				A2B189B0239842B5001C8C41 /* EarlGrey2Example */,
 				A2B189C6239842B6001C8C41 /* EarlGrey2ExampleUITests */,
+				A2918BCF23B0E4BD00595791 /* EG2Bundle */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +354,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A2918BCE23B0E4BD00595791 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2B189AF239842B5001C8C41 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +381,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A2918BCC23B0E4BD00595791 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2B189AD239842B5001C8C41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,6 +410,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A2918BD723B0E68C00595791 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2B189B0239842B5001C8C41 /* EarlGrey2Example */;
+			targetProxy = A2918BD623B0E68C00595791 /* PBXContainerItemProxy */;
+		};
 		A2B189C9239842B6001C8C41 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A2B189B0239842B5001C8C41 /* EarlGrey2Example */;
@@ -353,6 +434,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A2918BD423B0E4BD00595791 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/EarlGrey2Example.app/EarlGrey2Example";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EG2Bundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EG2Bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "EarlGrey/**";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A2918BD523B0E4BD00595791 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TARGET_BUILD_DIR)/EarlGrey2Example.app/EarlGrey2Example";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EG2Bundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EG2Bundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "EarlGrey/**";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		A2B189CE239842B6001C8C41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -552,6 +673,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A2918BD323B0E4BD00595791 /* Build configuration list for PBXNativeTarget "EG2Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2918BD423B0E4BD00595791 /* Debug */,
+				A2918BD523B0E4BD00595791 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A2B189AC239842B5001C8C41 /* Build configuration list for PBXProject "EarlGrey2Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
